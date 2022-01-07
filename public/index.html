@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSL</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["'Poppins'", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-poppins scroll-smooth">
+    <!--Navigation-->
+
+    <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+      <a href="#" class="p-2 mr-4 inline-flex items-center">
+        <span class="text-xl text-orange-100 font-bold tracking-wide"
+          ><span class="text-orange-500">S</span>arajevo<span
+            class="text-orange-500"
+            >S</span
+          >tudent<span class="text-orange-500">L</span>ife</span
+        >
+      </a>
+      <button
+        class="text-orange-100 inline-flex p-3 hover:bg-gray-900 rounded-full lg:hidden ml-auto hover:text-orange-500 outline-none nav-toggler"
+        data-target="#navigation"
+      >
+        <ion-icon name="menu-outline" class="text-3xl"></ion-icon>
+      </button>
+      <div
+        class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+        id="navigation"
+      >
+        <div
+          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
+        >
+          <a
+            href="#"
+            class="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded-full font-bold text-orange-100 items-center justify-center hover:bg-gray-900 hover:text-orange-500"
+          >
+            <span>Home</span>
+          </a>
+          <a
+            href="#"
+            class="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded-full font-bold text-orange-100 items-center justify-center hover:bg-gray-900 hover:text-orange-500"
+          >
+            <span>About</span>
+          </a>
+          <a
+            href="#"
+            class="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded-full font-bold text-orange-100 items-center justify-center hover:bg-gray-900 hover:text-orange-500"
+          >
+            <span>University</span>
+          </a>
+          <a
+            href="#"
+            class="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded-full font-bold text-orange-100 items-center justify-center hover:bg-gray-900 hover:text-orange-500"
+          >
+            <span>Restaurant</span>
+          </a>
+          <a
+            href="#"
+            class="lg:inline-flex lg:w-auto w-full px-5 py-2 rounded-full font-bold text-orange-100 items-center justify-center hover:bg-gray-900 hover:text-orange-500"
+          >
+            <span>Contact Us</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!--Hero-->
+
+    <section id="HOME">
+      <div class="w-full relative">
+        <div
+          class="w-full h-full bg-black top-0 left-0 absolute opacity-50"
+        ></div>
+        <div
+          class="w-full h-full flex flex-col absolute top-0 left-0 justify-center items-center z-30"
+        >
+          <div
+            class="text-white font-bold text-3xl lg:text-7xl md:text-6xl sm:text-5xl"
+          >
+            A better way to choose.
+          </div>
+          <div class="pt-2 my-4 relative mx-auto text-gray-600">
+            <input
+              class="ring-1 ring-offset-orange-100 bg-white w-60 md:w-96 h-10 px-5 pr-16 rounded-full text-sm focus:outline-orange-500"
+              type="search"
+              name="search"
+              placeholder="Search"
+            />
+            <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+              <svg
+                class="text-gray-600 h-4 w-4 fill-current hover:text-orange-500"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                id="Capa_1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 56.966 56.966"
+                style="enable-background: new 0 0 56.966 56.966"
+                xml:space="preserve"
+                width="512px"
+                height="512px"
+              >
+                <path
+                  d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <img src="Sarajevo.jpeg" alt="Sarajevo" class="w-full" />
+      </div>
+    </section>
+
+    <!--About-->
+
+    <section id="About Us">
+      <div class="justify-center items-center">
+        <div class="flex flex-col">
+          <div class="my-14">
+            <h1 class="font-bold text-2xl">
+              Choosing univeristy just got
+              <span class="text-orange-500">easier.</span>
+            </h1>
+            <p class="py-5">
+              It’s not just about finding the best university, it's figuring out
+              the ones to avoid. Read student reviews and testimonies.
+            </p>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 bg-gray-500">
+          <img class="" src="Study.jpeg" alt="Study" />
+        </div>
+      </div>
+    </section>
+
+    <!--Contact-->
+
+    <section id="Contuct Us">
+      <div class="justify-center items-center pl-7 bg-gray-600">
+            <form action="" class="contact-form">
+              <h2 class="text-3xl font-bold">CONTACT US</h2>
+              <input class="my-4 px-2 py-2 h-10 rounded-xl focus:ring-offset-orange-500" type="text" id="name" placeholder="Full name"></br>
+              <input class="my-4 px-2 py-2 h-10 rounded-xl focus:ring-offset-orange-500" type="email" id="email" placeholder="Email"></br>
+              <input class="my-4 px-2 py-2 h-10 rounded-xl focus:ring-offset-orange-500" type="test" id="subject" placeholder="Subject"></br>
+              <textarea class="my-4 px-2 py-2 rounded-xl focus:ring-offset-orange-500" id="message" placeholder="Message" cols="30" rows="10"></textarea></br>
+              <input class="my-6 px-4 py-2 h-10 bg-orange-100 hover:bg-orange-500 rounded-xl" type="submit" id="submit" placeholder="Send Message"></br>
+          </form>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer class="bg-gray-800">
+      <div class="w-full relative">
+        <div class="text-orange-100 flex flex-col items-center py-5">
+          <div class="flex justify-between space-x-6 py-2">
+            <div class="social-item">
+              <a href="https://www.linkedin.com/in/ademomeragic/"
+                ><ion-icon
+                  name="logo-linkedin"
+                  class="text-orange-100 hover:fill-orange-500 hover:transition-colors w-8 h-8"
+                ></ion-icon
+              ></a>
+            </div>
+            <div class="social-item">
+              <a href="https://github.com/ademomeragic"
+                ><ion-icon
+                  name="logo-github"
+                  class="text-orange-100 hover:fill-orange-500 hover:transition-colors w-8 h-8"
+                ></ion-icon
+              ></a>
+            </div>
+            <div class="social-item">
+              <a
+                href="https://www.facebook.com/people/Adem-Omeragic/100000404653231/"
+                ><ion-icon
+                  name="logo-facebook"
+                  class="text-orange-100 hover:fill-orange-500 hover:transition-colors w-8 h-8"
+                ></ion-icon
+              ></a>
+            </div>
+            <div class="social-item">
+              <a href="https://www.instagram.com/ademomeragic/"
+                ><ion-icon
+                  name="logo-instagram"
+                  class="text-orange-100 hover:fill-orange-500 hover:transition-colors w-8 h-8"
+                ></ion-icon
+              ></a>
+            </div>
+          </div>
+          <p>Copyright © 2021 Adem. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
